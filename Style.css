@@ -1,0 +1,88 @@
+
+      body{
+        background-image: url(WebsiteBG.jpg);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        background-color: white;
+
+      }
+      a{ text-decoration: none; font: 100% calibri;}
+      h1{ color: white }
+      h1:hover{ color: gray;}
+      h3{color:black;}
+      h3:hover{ color: grey;}
+      
+
+      /* Navigation line CSS */
+      .topfade
+      {
+        background: #EE800B;
+        background: -moz-linear-gradient(left, #EE800B 0%,#fefefe 90%);
+        background: -webkit-linear-gradient(left, #EE800B 0%,#fefefe 90%);
+        background: -o-linear-gradient(left, #EE800B 0%,#fefefe 90%);
+        background: -ms-linear-gradient(left, #EE800B 0%,#fefefe 90%);
+        background: linear-gradient(left, #EE800B 0%,#fefefe 90%);
+        padding: 10px;
+        font: 100% calibri;
+      }
+
+      .text
+      {
+        font: 100% calibri;
+
+
+
+      }
+      
+      .main
+      {
+        font: 120% calibri;
+        padding-left: 2%;
+        padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+        
+      }
+
+      .block1
+      {
+        background: none;
+        margin-left: 5%;
+        margin-right: 5%;
+        font: 90% calibri;
+
+      }
+      /* Project table CSS */
+      .project{
+        background: #EE800B;
+        background: -moz-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
+        background: -webkit-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
+        background: -o-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
+        background: -ms-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
+        background: linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
+        align-self: center;
+
+      }
+
+      
+      .screenshot:hover{
+        width: 70%;
+       /* border: 2px;
+        border-color: black; */
+      }
+      .screenshot:active{width: 300px; position: absolute; z-index: 50%}
+
+      /* HR with a fade */
+      hr{
+        background: #EE800B;
+        background: -moz-linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
+        background: -webkit-linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
+        background: -o-linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
+        background: -ms-linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
+        background: linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
+        align-self: center;
+        border: none;
+        height: 5px;
+      }
+      
+
