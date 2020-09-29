@@ -1,21 +1,33 @@
 
-      body{
+      body{/*Looped BG image*/
+        
         background-image: url(WebsiteBG.jpg);
         background-repeat: repeat-y;
         background-size: 100%;
         background-color: white;
 
       }
-      a{ text-decoration: none; font: 100% calibri;}
+      a{ text-decoration: none; font: 100% calibri; color: #EE800B; font-weight: bold}
       h1{ color: white }
       h1:hover{ color: gray;}
       h3{color:black;}
       h3:hover{ color: grey;}
-      
+      button{
+        background-color: #EE800B;
+        color: black;
+        font: 200% calibri;
+        border-color: white;
+        border-radius: 50px 5px 5px 5px;
+        background: -moz-linear-gradient(right, #EE800B 0%,#fefefe 90%);
+        background: -webkit-linear-gradient(right, #EE800B 0%,#fefefe 90%);
+        background: -o-linear-gradient(right, #EE800B 0%,#fefefe 90%);
+        background: -ms-linear-gradient(right, #EE800B 0%,#fefefe 90%);
+        background: linear-gradient(right, #EE800B 0%,#fefefe 90%);
+      }
 
-      /* Navigation line CSS */
+      
       .topfade
-      {
+      {/* Navigation line*/
         background: #EE800B;
         background: -moz-linear-gradient(left, #EE800B 0%,#fefefe 90%);
         background: -webkit-linear-gradient(left, #EE800B 0%,#fefefe 90%);
@@ -84,5 +96,7 @@
         border: none;
         height: 5px;
       }
+
+
       
 
