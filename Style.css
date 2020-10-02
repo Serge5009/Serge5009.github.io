@@ -101,7 +101,15 @@
         height: 5px;
       }
 
-
+      .mainphoto{
+        background-image: url(FaceLogo.jpg);
+        width: 192px;
+        height: 256px;
+        background-size: 100%;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+      }
       
   .topButt {
   position: fixed;
@@ -119,4 +127,11 @@
     border-radius: 25px 25px 25px 25px; 
     background: #EE800B;
     border: none;
+}
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
