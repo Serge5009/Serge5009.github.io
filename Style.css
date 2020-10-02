@@ -28,6 +28,9 @@
       
       .topfade
       {/* Navigation line*/
+        position: fixed;
+        left: 0px;
+        top: 0px;
         background: #EE800B;
         background: -moz-linear-gradient(left, #EE800B 0%,#fefefe 90%);
         background: -webkit-linear-gradient(left, #EE800B 0%,#fefefe 90%);
@@ -36,6 +39,7 @@
         background: linear-gradient(left, #EE800B 0%,#fefefe 90%);
         padding: 10px;
         font: 100% calibri;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
 
       .text
@@ -102,10 +106,14 @@
   .topButt {
   position: fixed;
   right: 45px;
-  bottom: 45px;}
+  bottom: 45px;
+
+}
   .topButton {
+    border: none;
     border-radius: 25px 25px 25px 25px; 
     background: #EE800B; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
  .topButton:hover {
     border-radius: 25px 25px 25px 25px; 
