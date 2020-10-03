@@ -135,11 +135,26 @@
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+.rotate270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
  .linkButt{
   margin-left: 20px;
   width: 150px;
   border-radius: 25px 25px 25px 25px;
  }
  .linkButt:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
+.linkButt_big{
+  margin-left: 20px;
+  width: 250px;
+  border-radius: 25px 25px 25px 25px;
+ }
+ .linkButt_big:hover{
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
