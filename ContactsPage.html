@@ -5,7 +5,7 @@
 
     <title> Serhii </title>
 
-    <link rel="icon" href="Logo.png">
+    <link rel="icon" href="Images/Logo.png">
     <link rel="stylesheet" type="text/css" href="Style.css">
 
    
@@ -13,15 +13,28 @@
   </head>
   <body>
 <!-- Go to the top button -->
-<a href="#" title="Go to the top" class="topButt"><button class="topButton">&#8639;<b>Top</b>&#8638;</button></a>
+<div id="topButt" hidden><button class="topButton">&#8639;<b>Top</b>&#8638;</button></div>
+<script>
+    topButt.onclick = function() {
+      window.scrollTo(pageXOffset, 0);
+      // Mooving to the top
+    };
 
+    window.addEventListener('scroll', function() {
+      topButt.hidden = (pageYOffset < 100);
+      //Checking position
+    });
+  </script>
+
+
+  
 <!-- Main line -->
 
 <table class="topfade" cols="4" bgcolor="EE800B" width="100%" height="50" border="0" bordercolor="black" align="left">
 	<td width="25%"><a href="index.html" title="Main page"><h1>Serhii Marchenko</h1></a></td>
 	<td width="15%"><a href="ProjectsPage.html" title="My past and ongoing projects"><h3>Projects</h3></a></td>
 	<td width="15%"><a href="SkillsPage.html" title="My professional background"><h3>Skills</h3></a></td>
-	<td width="15%"><a href="#" title="Current page"><h3>Contact me<img src="Arrow.gif" height="20px" class="rotate270"></h3></a></td>
+	<td width="15%"><a href="#" title="Current page"><h3>Contact me<img src="Images/Arrow.gif" height="20px" class="rotate270"></h3></a></td>
   <td width="30%" align="right">Text</td>
 </table>
 <table><tr height="80px"></tr> </table>
@@ -29,6 +42,8 @@
 <div class="main">
 
 <h1 style="color: black;" align="center">My contacts</h1>
+
+<div id="arrowTop" hidden></div>
 
 
 
@@ -48,18 +63,53 @@
 
 <h4>Website links:</h4><br>
 <table>
-  <td><a href="https://github.com/Serge5009" target="blanlk"><div class="linkButt"><img src="GitHub.png" width="50px">GitHub</div></a></td>
-  <td><a href="ErrorPage.html"><div class="linkButt"><img src="LinkedIn.png" width="50px">LinkedIn</div></a></td>
-  <td><a href="ErrorPage.html"><div class="linkButt"><img src="Facebook.png" width="50px">Facebook</div></a></td>
+  <td><a href="https://github.com/Serge5009" target="blanlk"><div class="linkButt"><img src="Images/GitHub.png" width="50px">GitHub</div></a></td>
+  <td><a href="ErrorPage.html"><div class="linkButt"><img src="Images/LinkedIn.png" width="50px">LinkedIn</div></a></td>
+  <td><a href="ErrorPage.html"><div class="linkButt"><img src="Images/Facebook.png" width="50px">Facebook</div></a></td>
 </table>
 
 
 <hr width="50%">
 
 <h4>Other contacts:</h4><br>
-<a href="https://telegram.im/@COC_MblCJIOM" target="_blank"><div class="linkButt"><img src="Telegram.webp" width="50px">Telegram</div></a> <br>
+<a href="https://telegram.im/@COC_MblCJIOM" target="_blank"><div class="linkButt"><img src="Images/Telegram.webp" width="50px">Telegram</div></a> <br>
 Discord: OrderGames#0703 <br>
-
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
+Some text <br><br><br>
 </div>
   </body>
 </html>

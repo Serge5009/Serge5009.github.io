@@ -5,7 +5,7 @@
 
     <title> Serhii </title>
 
-    <link rel="icon" href="Logo.png">
+    <link rel="icon" href="Images/Logo.png">
     <link rel="stylesheet" type="text/css" href="Style.css">
 
    
@@ -14,14 +14,26 @@
   </head>
   <body >
 <!-- Go to the top button -->
-<a href="#" title="Go to the top" class="topButt"><button class="topButton">&#8639;<b>Top</b>&#8638;</button></a>
+<div id="topButt" hidden><button class="topButton">&#8639;<b>Top</b>&#8638;</button></div>
+<script>
+    topButt.onclick = function() {
+      window.scrollTo(pageXOffset, 0);
+      // Mooving to the top
+    };
+
+    window.addEventListener('scroll', function() {
+      topButt.hidden = (pageYOffset < 100);
+      //Checking position
+    });
+  </script>
+
 
 <!-- Main line -->
 
 <table class="topfade" cols="4" bgcolor="EE800B" width="100%" height="50" border="0" bordercolor="black" align="left">
 	<td width="25%"><a href="index.html" title="Main page"><h1>Serhii Marchenko</h1></a></td>
 	<td width="15%"><a href="ProjectsPage.html" title="My past and ongoing projects"><h3>Projects</h3></a></td>
-	<td width="15%"><a href="#" title="Current page"><h3>Skills<img src="Arrow.gif" height="20px" class="rotate270"></h3></a></td>
+	<td width="15%"><a href="#" title="Current page"><h3>Skills<img src="Images/Arrow.gif" height="20px" class="rotate270"></h3></a></td>
 	<td width="15%"><a href="ContactsPage.html" title="Contact information"><h3>Contact me</h3></a></td>
   <td width="30%" align="right">Text</td>
 </table>

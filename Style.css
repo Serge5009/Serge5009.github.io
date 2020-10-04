@@ -1,4 +1,7 @@
-
+      html {
+     overflow: -moz-scrollbars-vertical; 
+     overflow-y: scroll;
+      }
       body{/*Looped BG image*/
         
         background-image: url(WebsiteBG.jpg);
@@ -102,7 +105,7 @@
       }
 
       .mainphoto{
-        background-image: url(FaceLogo.jpg);
+        background-image: url(Images/FaceLogo.jpg);
         width: 192px;
         height: 256px;
         background-size: 100%;
@@ -111,7 +114,7 @@
         border-style: solid;
       }
       
-  .topButt {
+  #topButt {
   position: fixed;
   right: 45px;
   bottom: 45px;
@@ -123,11 +126,7 @@
     background: #EE800B; 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
- .topButton:hover {
-    border-radius: 25px 25px 25px 25px; 
-    background: #EE800B;
-    border: none;
-}
+ 
 .rotate180 {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -158,3 +157,16 @@
  .linkButt_big:hover{
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
+
+#arrowTop {
+      height: 9px;
+      width: 14px;
+      color: green;
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      cursor: pointer;
+    }
+#arrowTop::before {
+      content: '▲';
+    }

@@ -6,7 +6,7 @@
 
     <title> Serhii </title>
 
-    <link rel="icon" href="Logo.png">
+    <link rel="icon" href="Images/Logo.png">
     <link rel="stylesheet" type="text/css" href="Style.css">
 
     
@@ -15,13 +15,25 @@
   </head>
   <body >
 <!-- Go to the top button -->
-<a href="#" title="Go to the top" class="topButt"><button class="topButton">&#8639;<b>Top</b>&#8638;</button></a>
+<div id="topButt" hidden><button class="topButton">&#8639;<b>Top</b>&#8638;</button></div>
+<script>
+    topButt.onclick = function() {
+      window.scrollTo(pageXOffset, 0);
+      // Mooving to the top
+    };
+
+    window.addEventListener('scroll', function() {
+      topButt.hidden = (pageYOffset < 100);
+      //Checking position
+    });
+  </script>
+
 
 <!-- Main line -->
 
 <table class="topfade" cols="4" bgcolor="EE800B" width="100%" height="50" border="0" bordercolor="black" align="left">
 	<td width="25%"><a href="index.html" title="Main page"><h1>Serhii Marchenko</h1></a></td>
-	<td width="15%"><a href="#" title="Current page"><h3>Projects<img src="Arrow.gif" height="20px" class="rotate270"></h3></a></td>
+	<td width="15%"><a href="#" title="Current page"><h3>Projects<img src="Images/Arrow.gif" height="20px" class="rotate270"></h3></a></td>
 	<td width="15%"><a href="SkillsPage.html" title="My professional background"><h3>Skills</h3></a></td>
 	<td width="15%"><a href="ContactsPage.html" title="Contact information"><h3>Contact me</h3></a></td>
   <td width="30%" align="right">Text</td>
@@ -40,9 +52,57 @@
 
 </table>
 
-<hr>
+<br><hr><br>
 
-<!-- Table for the project 1 -->
+<!-- Table for the project 2 -->
+<table>
+  <td class="project" width="5%"> </td>
+  <td>
+<table width="100%" border="0">
+  <tr><td width="80%"><p style="font: 150% calibri"><strong>Jenga Unity -- (<i>in development</i>)</strong></p></td> <td width="20%"></td></tr>
+  <tr></tr>
+  <tr height="250px"><td width="80%" height="150px">
+        <table border="0"><tr height="250px">
+
+          <!-- First 8 screenshots -->
+          <td align="center" width="250px"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+          <td align="center"><a href="Screenshots/" target="blank"><img src="Screenshots/" class="screenshot" width="80%" border="1"></a></td>
+
+        </tr></table>
+      </td><td width="20%"><a href="Gallery.html">
+      <table border="0" width="80%">
+        <tr><td height="120px" align="center"> <img src="Images/image.png" width="80%"> </td></tr><tr><td height="30px" align="center"> All images </td></tr>
+      </table>
+
+      </a></td> 
+  </tr>
+   <tr></tr>
+  </td>
+</table>
+</table>
+
+<h4>Description:</h4>
+
+<p>None</p>
+
+<a href="https://drive.google.com/" target="blanlk">
+<div class="linkButt_big"><img src="Images/Android.png" width="50px"> None</div>
+</a>
+
+
+
+<br><hr><br>
+
+
+
+<!-- Table for the project 2 -->
 <table>
   <td class="project" width="5%"> </td>
   <td>
@@ -66,7 +126,7 @@
         </tr></table>
       </td><td width="20%"><a href="Gallery.html">
       <table border="0" width="80%">
-        <tr><td height="120px" align="center"> <img src="image.png" width="80%"> </td></tr><tr><td height="30px" align="center"> All images </td></tr>
+        <tr><td height="120px" align="center"> <img src="Images/image.png" width="80%"> </td></tr><tr><td height="30px" align="center"> All images </td></tr>
       </table>
 
       </a></td> 
@@ -81,10 +141,10 @@
 <p>Empire Grinder is raw but interesting variant of "clicker". <br>This game is inspired by "Idle" games genre, where you spend resources to increas your income.<br>Game was created in <a href="https://appinventor.mit.edu/" target="blanlk">"MitApp Inventor"</a>, this tool isn't powerful enough to crate normal game, but it's faster way of creating templates like this one.<br>Music in this project is made by <a href="https://t.me/organic_waste" target="blanlk">S&T</a>. I've made voulume controls, language settings and some other features. </p>
 
 <a href="https://drive.google.com/file/d/1VvzbaRRZUEtvI_ylfChH76kt8JDQ4YpO/view?usp=sharing" target="blanlk">
-<div class="linkButt_big"><img src="Android.png" width="50px"> Download for Android</div>
+<div class="linkButt_big"><img src="Images/Android.png" width="50px"> Download for Android</div>
 </a>
 
-<hr>
+<br><hr><br>
 
 </div>
   </body>
