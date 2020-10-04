@@ -86,7 +86,7 @@
        /* border: 2px;
         border-color: black; */
       }
-      .screenshot:active{width: 300px; position: absolute; z-index: 50%}
+     /* .screenshot:active{width: 300px; position: absolute; z-index: 50%} */
 
       /* HR with a fade */
       hr{
