@@ -14,20 +14,10 @@
   <body>
 <!-- Go to the top button -->
 <div id="topButt" hidden><button class="topButton">&#8639;<b>Top</b>&#8638;</button></div>
-<script>
-    topButt.onclick = function() {
-      window.scrollTo(pageXOffset, 0);
-      // Mooving to the top
-    };
 
-    window.addEventListener('scroll', function() {
-      topButt.hidden = (pageYOffset < 100);
-      //Checking position
-    });
-  </script>
+<!-- Top button script -->
+<script src="Scripts/TopButton.js"></script>
 
-
-  
 <!-- Main line -->
 
 <table class="topfade" cols="4" bgcolor="EE800B" width="100%" height="50" border="0" bordercolor="black" align="left">
@@ -56,8 +46,8 @@
 
 <h4>Call me: </h4><br>
 
-<a href="tel:+380683035721">+38 (068) 303 57 21</a> - Ukraine, Kyivstar <br>
-<a href="tel:+380954486903">+38 (095) 448 69 03</a> - Ukraine, Vodaphone <br>
+<a href="tel:+380683035721"><div class="linkButt_phone">+38 (068) 303 57 21 <p class="LinkText_phone">Ukraine, Kyivstar</p></div></a> <br>
+<a href="tel:+380954486903"><div class="linkButt_phone">+38 (095) 448 69 03 <p class="LinkText_phone">Ukraine, Vodaphone</p></div></a> <br>
 
 <hr width="50%">
 
@@ -71,9 +61,13 @@
 
 <hr width="50%">
 
-<h4>Other contacts:</h4><br>
-<a href="https://telegram.im/@COC_MblCJIOM" target="_blank"><div class="linkButt"><img src="Images/Telegram.webp" width="50px">Telegram</div></a> <br>
+<h4>Messengers:</h4><br>
+<a href="https://telegram.im/@COC_MblCJIOM" target="_blank"><div class="linkButt"><img src="Images/Telegram.webp" width="50px">Telegram</div></a><br><br>
+
+<a href="viber://add?number=%2B(380)683035721" target="_blank"><div class="linkButt"><img src="Images/Viber.png" width="50px">Viber</div></a><br>
+
 Discord: OrderGames#0703 <br>
+
 Some text <br><br><br>
 Some text <br><br><br>
 Some text <br><br><br>

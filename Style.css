@@ -1,21 +1,43 @@
-      html {
+      html 
+      {
      overflow: -moz-scrollbars-vertical; 
      overflow-y: scroll;
       }
-      body{/*Looped BG image*/
+
+      body
+      {/*Looped BG image*/
         
         background-image: url(WebsiteBG.jpg);
         background-repeat: repeat-y;
         background-size: 100%;
         background-color: white;
-
       }
-      a{ text-decoration: none; font: 100% calibri; color: #EE800B; font-weight: bold}
-      h1{ color: white }
-      h1:hover{ color: gray;}
-      h3{color:black;}
-      h3:hover{ color: grey;}
-      button{
+
+      a
+      { 
+        text-decoration: none; font: 100% calibri; color: #EE800B; font-weight: bold
+      }
+
+      h1
+      { 
+        color: white 
+      }
+      h1:hover
+      { 
+        color: gray;
+      }
+
+      h3
+      {
+        color:black;
+      }
+      h3:hover
+      { 
+        color: grey;
+      }
+
+      button
+      {
         background-color: #EE800B;
         color: black;
         font: 200% calibri;
@@ -28,7 +50,6 @@
         background: linear-gradient(right, #EE800B 0%,#fefefe 90%);
       }
 
-      
       .topfade
       {/* Navigation line*/
         position: fixed;
@@ -48,9 +69,6 @@
       .text
       {
         font: 100% calibri;
-
-
-
       }
       
       .main
@@ -60,7 +78,6 @@
         padding-top: 20px;
         margin-top: 20px;
         margin-bottom: 20px; 
-        
       }
 
       .block1
@@ -69,10 +86,11 @@
         margin-left: 5%;
         margin-right: 5%;
         font: 90% calibri;
-
       }
+
       /* Project table CSS */
-      .project{
+      .project
+      {
         background: #EE800B;
         background: -moz-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
         background: -webkit-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
@@ -80,7 +98,6 @@
         background: -ms-linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
         background: linear-gradient(left, #fefefe 0%, #EE800B 90%,#fefefe 100%);
         align-self: center;
-
       }
 
       
@@ -91,8 +108,9 @@
       }
      /* .screenshot:active{width: 300px; position: absolute; z-index: 50%} */
 
-      /* HR with a fade */
-      hr{
+      /* HR with fade */
+      hr
+      {
         background: #EE800B;
         background: -moz-linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
         background: -webkit-linear-gradient(left, #fefefe 10%, #EE800B 50%,#fefefe 90%);
@@ -104,7 +122,8 @@
         height: 5px;
       }
 
-      .mainphoto{
+      .mainphoto
+      {
         background-image: url(Images/FaceLogo.jpg);
         width: 192px;
         height: 256px;
@@ -114,59 +133,88 @@
         border-style: solid;
       }
       
-  #topButt {
+  #topButt 
+  {
   position: fixed;
   right: 45px;
   bottom: 45px;
-
 }
-  .topButton {
+  .topButton 
+  {
     border: none;
     border-radius: 25px 25px 25px 25px; 
     background: #EE800B; 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
- }
+  }
  
-.rotate180 {
+.rotate180 
+{
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.rotate270 {
+.rotate270 
+{
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
 }
- .linkButt{
+
+ .linkButt
+ {
   margin-left: 20px;
   width: 150px;
   border-radius: 25px 25px 25px 25px;
  }
- .linkButt:hover{
+ .linkButt:hover
+ {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
-.linkButt_big{
+
+.linkButt_big
+{
   margin-left: 20px;
   width: 250px;
   border-radius: 25px 25px 25px 25px;
  }
- .linkButt_big:hover{
+ .linkButt_big:hover
+ {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
 
-#arrowTop {
-      height: 9px;
-      width: 14px;
-      color: green;
-      position: fixed;
-      bottom: 10px;
-      left: 10px;
-      cursor: pointer;
-    }
-#arrowTop::before {
-      content: '▲';
-    }
+.linkButt_phone
+{
+  text-align: center;
+  margin-left: 20px;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px 25px 25px 25px;
+ }
+ .linkButt_phone:hover
+ {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
+
+.LinkText_phone{
+  color: black;
+  margin-top: 0px;
+}
+
+#arrowTop 
+{
+  height: 9px;
+  width: 14px;
+  color: green;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+#arrowTop::before 
+{
+  content: '▲';
+}

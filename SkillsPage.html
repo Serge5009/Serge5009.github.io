@@ -15,18 +15,9 @@
   <body >
 <!-- Go to the top button -->
 <div id="topButt" hidden><button class="topButton">&#8639;<b>Top</b>&#8638;</button></div>
-<script>
-    topButt.onclick = function() {
-      window.scrollTo(pageXOffset, 0);
-      // Mooving to the top
-    };
 
-    window.addEventListener('scroll', function() {
-      topButt.hidden = (pageYOffset < 100);
-      //Checking position
-    });
-  </script>
-
+<!-- Top button script -->
+<script src="Scripts/TopButton.js"></script>
 
 <!-- Main line -->
 
@@ -50,10 +41,33 @@
 I started my education in gymnasium №56 in Kyiv in year 2008 . After 5 years of studying there me with my family moved to anoyher district, so I had to change a school. <br>
 Then for 6 years I went to Kyiv Physics and Mathematics Lyceum №208, and finished my high school period there. <br>
 In school I actively took part in different olympics, I even saved some <a href="ErrorPage.html">diplomas</a> from there: <br>
-<li>
-  
-  
-</li>
+
+<ol start="2020" reversed>
+  <li>
+    <ul><!-- 2020 -->
+    <li>English - 2nd place</li>
+    <li>History - 3rd place</li>
+    <li>Geoeraphy - 3rd place</li>
+    </ul><br>
+  </li>
+  <li>
+    <ul><!-- 2019 -->
+    <li>History - 3rd place</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    </ul><br>
+  </li>
+  <li>
+    <ul><!-- 2018 -->
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    </ul><br>
+  </li>
+</ol>
+
 <br>
 At the age of 13 I started visiting robotix classes. There I learned basic in c++ and c# languages, arduino, mit app inventor and some other stuff.<br>
 Also at the same time we started programming at school, so it was interesting and easy to me. <br>
