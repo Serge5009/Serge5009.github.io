@@ -7,10 +7,8 @@
     <title> Serhii </title>
 
     <link rel="icon" href="Images/Logo.png">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-
-   
-
+    <!-- Light theme stylesheet -->
+  <link href="Style.css" rel="stylesheet" id="theme-link">
 
   </head>
   <body>
@@ -25,18 +23,38 @@
 
 <table class="topfade" cols="4" bgcolor="EE800B" width="100%" height="50" border="0" bordercolor="black" align="left">
 	<td width="25%"><a href="#" title="Current page"><h1>Serhii Marchenko</h1></a></td>
-	<td width="15%"><a href="ProjectsPage.html" title="My past and ongoing projects"><h3>Projects</h3></a></td>
-	<td width="15%"><a href="SkillsPage.html" title="My professional background"><h3>Skills</h3></a></td>
-	<td width="15%"><a href="ContactsPage.html" title="Contact information"><h3>Contact me</h3></a></td>
-  <td width="30%" align="right">Text</td>
+	<td width="15%"><a href="ProjectsPage.html" title="My past and ongoing projects"><div class="navbarButton"><h3>Projects</h3></div></a></td>
+	<td width="15%"><div class="navbarButton"><a href="SkillsPage.html" title="My professional background"><h3>Skills</h3></a></div></td>
+	<td width="15%"><div class="navbarButton"><a href="ContactsPage.html" title="Contact information"><h3>Contact me</h3></a></div></td>
+  <td width="30%" align="right"><button class="btn-toggle">Dark Mode(unfinished)</button></td>
 </table>
 
-<table><tr height="100px"></tr> </table>
+<table><tr height="100px"></tr></table>
 <h1 style="color: black;" align="center">About me:</h1>
 
 <div class="main">
 
+  <!-- Dark Mode -->
+  <!--  Script   -->
+<script>
+// Select the button
+const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
 
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+  // If the current URL contains "ligh-theme.css"
+  if (theme.getAttribute("href") == "Style.css") {
+    // ... then switch it to "dark-theme.css"
+    theme.href = "DarkMode.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "light-theme.css"
+    theme.href = "Style.css";
+  }
+});
+</script>
 
   <!-- Descrioption line 1 -->
 <table>
