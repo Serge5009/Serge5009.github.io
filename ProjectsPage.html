@@ -7,7 +7,8 @@
     <title> Serhii </title>
 
     <link rel="icon" href="Images/Logo.png">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- Light theme stylesheet -->
+  <link href="Style.css" rel="stylesheet" id="theme-link">
 
     
 
@@ -27,10 +28,33 @@
 	<td width="15%"><a href="#" title="Current page"><h3>Projects<img src="Images/Arrow.gif" height="20px" class="rotate270"></h3></a></td>
 	<td width="15%"><a href="SkillsPage.html" title="My professional background"><h3>Skills</h3></a></td>
 	<td width="15%"><a href="ContactsPage.html" title="Contact information"><h3>Contact me</h3></a></td>
-  <td width="30%" align="right">Text</td>
+  <td width="30%" align="right"><button class="btn-toggle">Dark Mode(unfinished)</button></td>
 </table>
 
 <table><tr height="80px"></tr> </table>
+
+  <!-- Dark Mode -->
+  <!--  Script   -->
+<script>
+// Select the button
+const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+  // If the current URL contains "ligh theme"
+  if (theme.getAttribute("href") == "Style.css") {
+    // ... then switch it to "dark theme"
+    theme.href = "DarkMode.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "light theme"
+    theme.href = "Style.css";
+  }
+});
+</script>
+
 <div class="main">
 
 <h1 style="color: black;" align="center">My projects</h1>
@@ -82,7 +106,7 @@
 
 <h4>Description:</h4>
 
-<p>Simple unity physics based jenga. It has no UI, so you have to restart it using Alt+F4. I made it just for fun, and it was fun for first 15 minutes.<br> There are also some other objects on the table that can fall as you destroy Jenga tower.<br>
+<p>Simple unity physics based Jenga. It has no UI, so you have to restart it using Alt+F4. I made it just for fun, and it was fun for first 15 minutes.<br> There are also some other objects on the table that can fall as you destroy your tower.<br>
 At this moment game is unbalanced and it's hard to move more than 4 blocks without breaking the tower.</p>
 <table><td>
 <a href="https://drive.google.com/file/d/1pNdnaXnvXe-8995oFHwj3iy2cnpF2u0V/view?usp=sharing" target="blanlk">
@@ -133,7 +157,7 @@ At this moment game is unbalanced and it's hard to move more than 4 blocks witho
 
 <h4>Description:</h4>
 
-<p>Empire Grinder is raw but interesting variant of "clicker". <br>This game is inspired by "Idle" games genre, where you spend resources to increas your income.<br>Game was created in <a href="https://appinventor.mit.edu/" target="blanlk">"MitApp Inventor"</a>, this tool isn't powerful enough to crate normal game, but it's faster way of creating templates like this one.<br>Music in this project is made by <a href="https://t.me/organic_waste" target="blanlk">S&T</a>. I've made voulume controls, language settings and some other features. </p>
+<p>Empire Grinder is a raw but interesting variant of "clicker". <br>This game is inspired by "Idle" game genre, where you spend resources to increase your income.<br>This game was created in <a href="https://appinventor.mit.edu/" target="blanlk">"MitApp Inventor"</a>, this tool isn't powerful enough to crate normal game, but it's faster way of creating templates like this one.<br>The music in this project is made by <a href="https://t.me/organic_waste" target="blanlk">S&T</a>. I've made volume controls, language settings and some other features. </p>
 
 <a href="https://drive.google.com/file/d/1VvzbaRRZUEtvI_ylfChH76kt8JDQ4YpO/view?usp=sharing" target="blanlk">
 <div class="linkButt_big"><img src="Images/Android.png" width="50px"> Download for Android</div>

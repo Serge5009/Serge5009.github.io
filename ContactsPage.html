@@ -6,7 +6,8 @@
     <title> Serhii </title>
 
     <link rel="icon" href="Images/Logo.png">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- Light theme stylesheet -->
+  <link href="Style.css" rel="stylesheet" id="theme-link">
 
    
 
@@ -25,9 +26,31 @@
 	<td width="15%"><a href="ProjectsPage.html" title="My past and ongoing projects"><h3>Projects</h3></a></td>
 	<td width="15%"><a href="SkillsPage.html" title="My professional background"><h3>Skills</h3></a></td>
 	<td width="15%"><a href="#" title="Current page"><h3>Contact me<img src="Images/Arrow.gif" height="20px" class="rotate270"></h3></a></td>
-  <td width="30%" align="right">Text</td>
+  <td width="30%" align="right"><button class="btn-toggle">Dark Mode(unfinished)</button></td>
 </table>
 <table><tr height="80px"></tr> </table>
+
+  <!-- Dark Mode -->
+  <!--  Script   -->
+<script>
+// Select the button
+const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+  // If the current URL contains "ligh theme"
+  if (theme.getAttribute("href") == "Style.css") {
+    // ... then switch it to "dark theme"
+    theme.href = "DarkMode.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "light theme"
+    theme.href = "Style.css";
+  }
+});
+</script>
 
 <div class="main">
 

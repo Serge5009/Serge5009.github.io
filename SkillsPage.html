@@ -6,7 +6,8 @@
     <title> Serhii </title>
 
     <link rel="icon" href="Images/Logo.png">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- Light theme stylesheet -->
+  <link href="Style.css" rel="stylesheet" id="theme-link">
 
    
 
@@ -26,9 +27,31 @@
 	<td width="15%"><a href="ProjectsPage.html" title="My past and ongoing projects"><h3>Projects</h3></a></td>
 	<td width="15%"><a href="#" title="Current page"><h3>Skills<img src="Images/Arrow.gif" height="20px" class="rotate270"></h3></a></td>
 	<td width="15%"><a href="ContactsPage.html" title="Contact information"><h3>Contact me</h3></a></td>
-  <td width="30%" align="right">Text</td>
+  <td width="30%" align="right"><button class="btn-toggle">Dark Mode(unfinished)</button></td>
 </table>
 <table><tr height="80px"></tr> </table>
+
+  <!-- Dark Mode -->
+  <!--  Script   -->
+<script>
+// Select the button
+const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+  // If the current URL contains "ligh theme"
+  if (theme.getAttribute("href") == "Style.css") {
+    // ... then switch it to "dark theme"
+    theme.href = "DarkMode.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "light theme"
+    theme.href = "Style.css";
+  }
+});
+</script>
 
 <div class="main">
 
@@ -38,9 +61,9 @@
 <hr>
 <h4 align="center">School</h4>
 <p>
-I started my education in gymnasium №56 in Kyiv in year 2008 . After 5 years of studying there me with my family moved to anoyher district, so I had to change a school. <br>
+I started my education in gymnasium №56 in Kyiv in the year 2008 . After 5 years of studying there me with my family moved to another district, so I had to change a school. <br>
 Then for 6 years I went to Kyiv Physics and Mathematics Lyceum №208, and finished my high school period there. <br>
-In school I actively took part in different olympics, I even saved some <a href="ErrorPage.html">diplomas</a> from there: <br>
+In school I actively took part in different Olympics, I even saved some <a href="ErrorPage.html">diplomas</a> from there: <br>
 
 <ol start="2020" reversed>
   <li>
@@ -69,9 +92,9 @@ In school I actively took part in different olympics, I even saved some <a href=
 </ol>
 
 <br>
-At the age of 13 I started visiting robotix classes. There I learned basic in c++ and c# languages, arduino, mit app inventor and some other stuff.<br>
+At the age of 13 I started visiting robotics classes. There I learned basics in c++ and c# languages, Arduino, MIT app inventor and some other stuff.<br>
 Also at the same time we started programming at school, so it was interesting and easy to me. <br>
-After 2 years of robotix course I wasn't that enthusiastic about IT, so it became one my hobbyes but not main one.<br>
+After 2 years of robotics course I wasn't that enthusiastic about IT, so it became one my hobbies but not the main one.<br>
 
 <p>
 </div>
