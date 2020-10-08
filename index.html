@@ -30,57 +30,32 @@
 </table>
 
 <table><tr height="100px"></tr></table>
-<h1 class="titleText" align="center">About me:</h1>
+<h1 class="titleText">About me:</h1>
 
   <!-- Dark Mode -->
   <!--  Script   -->
-<script>
+<!--<script>
 // Select the button
 const btn = document.querySelector(".btn-toggle");
 // Select the stylesheet <link>
-const theme = document.querySelector("#theme-link");
+const themelink = document.querySelector("#theme-link");
 
 // Listen for a click on the button
 btn.addEventListener("click", function() {
   // If the current URL contains "ligh theme"
-  if (theme.getAttribute("href") == "Style.css") {
+  if (themelink.getAttribute("href") == "Style.css") {
     // ... then switch it to "dark theme"
-    theme.href = "DarkMode.css";
+    themelink.href = "DarkMode.css";
   // Otherwise...
   } else {
     // ... switch it to "light theme"
-    theme.href = "Style.css";
+    themelink.href = "Style.css";
   }
 });
+</script> -->
+<script src="Scripts/DarkMode.js">
 </script>
-<script>
-// Select the button
-const btn = document.querySelector(".btn-toggle");
-// Select the theme preference from localStorage
-const currentTheme = localStorage.getItem("theme");
- 
-// If the current theme in localStorage is "dark"...
-if (currentTheme == "dark") {
-  // ...then use the .dark-theme class
-  document.body.classList.add("dark-theme");
-}
- 
-// Listen for a click on the button 
-btn.addEventListener("click", function() {
-  // Toggle the .dark-theme class on each click
-  document.body.classList.toggle("dark-theme");
-  
-  // Let's say the theme is equal to light
-  let theme = "light";
-  // If the body contains the .dark-theme class...
-  if (document.body.classList.contains("dark-theme")) {
-    // ...then let's make the theme dark
-    theme = "dark";
-  }
-  // Then save the choice in localStorage
-  localStorage.setItem("theme", theme);
-});
-</script>
+
 <div class="main">
 
 

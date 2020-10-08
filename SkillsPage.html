@@ -31,28 +31,6 @@
 </table>
 <table><tr height="80px"></tr> </table>
 
-  <!-- Dark Mode -->
-  <!--  Script   -->
-<script>
-// Select the button
-const btn = document.querySelector(".btn-toggle");
-// Select the stylesheet <link>
-const theme = document.querySelector("#theme-link");
-
-// Listen for a click on the button
-btn.addEventListener("click", function() {
-  // If the current URL contains "ligh theme"
-  if (theme.getAttribute("href") == "Style.css") {
-    // ... then switch it to "dark theme"
-    theme.href = "DarkMode.css";
-  // Otherwise...
-  } else {
-    // ... switch it to "light theme"
-    theme.href = "Style.css";
-  }
-});
-</script>
-
 <div class="main">
 
 <h1 class="titleText" align="center">My education</h1>
@@ -100,3 +78,5 @@ After 2 years of robotics course I wasn't that enthusiastic about IT, so it beca
 </div>
   </body>
 </html>
+<script src="Scripts/DarkMode.js">
+</script>
