@@ -43,6 +43,7 @@
       { 
         color: #59656F;
       }
+      img{filter: brightness(0.8) contrast(1.2);}
 
       button
       {
@@ -64,6 +65,8 @@
         padding: 10px;
         font: 100% calibri;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        filter: brightness(1) contrast(1);
+        z-index: 10;
       }
 
       .text
@@ -91,12 +94,12 @@
       /* Project table CSS */
       .project
       {
-        background: #EE800B;
-        background: -moz-linear-gradient(left, #303030 0%, #EE800B 90%,#303030 100%);
-        background: -webkit-linear-gradient(left, #303030 0%, #EE800B 90%,#303030 100%);
-        background: -o-linear-gradient(left, #303030 0%, #EE800B 90%,#303030 100%);
-        background: -ms-linear-gradient(left, #303030 0%, #EE800B 90%,#303030 100%);
-        background: linear-gradient(left, #303030 0%, #EE800B 90%,#303030 100%);
+        background: #D1603D;
+        background: -moz-linear-gradient(left, #303030 0%, #D1603D 90%,#303030 100%);
+        background: -webkit-linear-gradient(left, #303030 0%, #D1603D 90%,#303030 100%);
+        background: -o-linear-gradient(left, #303030 0%, #D1603D 90%,#303030 100%);
+        background: -ms-linear-gradient(left, #303030 0%, #D1603D 90%,#303030 100%);
+        background: linear-gradient(left, #303030 0%, #D1603D 90%,#303030 100%);
         align-self: center;
       }
 
@@ -111,7 +114,7 @@
       /* HR with fade */
       hr
       {
-        background: #EE800B;
+        background: #D1603D;
         background: -moz-linear-gradient(left, #303030 10%, #59656F 50%,#303030 90%);
         background: -webkit-linear-gradient(left, #303030 10%, #59656F 50%,#303030 90%);
         background: -o-linear-gradient(left, #303030 10%, #59656F 50%,#303030 90%);
@@ -131,6 +134,8 @@
         border-width: 1px;
         border-color: black;
         border-style: solid;
+        filter: brightness(0.8) contrast(1.0);
+        z-index: 1;
       }
       
   #topButt 
@@ -143,7 +148,7 @@
   {
     border: none;
     border-radius: 25px 25px 25px 25px; 
-    background: #EE800B; 
+    background: #D1603D; 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
  
@@ -200,23 +205,8 @@
  }
 
 .LinkText_phone{
-  color: black;
+  color: white;
   margin-top: 0px;
-}
-
-#arrowTop 
-{
-  height: 9px;
-  width: 14px;
-  color: green;
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  cursor: pointer;
-}
-#arrowTop::before 
-{
-  content: '▲';
 }
 
 .btn-toggle:hover
@@ -231,4 +221,12 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   height: 50px;
   widows: 100px;
+ }
+ .titleText
+ {
+  color: white;
+ }
+ .titleText:hover
+ {
+  color: white;
  }

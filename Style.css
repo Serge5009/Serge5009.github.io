@@ -210,23 +210,10 @@
   color: black;
   margin-top: 0px;
 }
-
-#arrowTop 
-{
-  height: 9px;
-  width: 14px;
-  color: green;
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  cursor: pointer;
-}
-#arrowTop::before 
-{
-  content: '▲';
-}
 .btn-toggle:hover
  {
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
+ .titleText{color: black;}
+ .titleText:hover{color: black;}
