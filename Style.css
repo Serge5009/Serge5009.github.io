@@ -57,8 +57,11 @@
         background: none;
       }
 
+      /* 
+      NavBar 
+      (gradient in normal mode and solid color in dark mode */
       .topfade
-      {/* Navigation line*/
+      {
         position: fixed;
         left: 0px;
         top: 0px;
@@ -95,7 +98,7 @@
         font: 90% calibri;
       }
 
-      /* Project table CSS */
+      /* Gradient on the left part of project table */
       .project
       {
         background: #EE800B;
@@ -107,11 +110,11 @@
         align-self: center;
       }
 
-      
-      .screenshot:hover{
+      }
+      /* Screenshots when focused */
+      .screenshot:hover
+      {
         width: 70%;
-       /* border: 2px;
-        border-color: black; */
       }
      /* .screenshot:active{width: 300px; position: absolute; z-index: 50%} */
 
@@ -215,5 +218,12 @@
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
- .titleText{color: black;}
- .titleText:hover{color: black;}
+ .titleText
+ {
+  color: black;
+  text-align: center;
+}
+ .titleText:hover
+ {
+  color: black;
+}
