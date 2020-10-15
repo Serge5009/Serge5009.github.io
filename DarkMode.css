@@ -216,9 +216,13 @@
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
  }
-.navbarButton:hover
+/*.navbarButton
 {
-  vertical-align: center;
+  text-align: center;
+}
+.navbarButton:hover
+{ */
+  
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   height: 50px;
@@ -227,6 +231,7 @@
  .titleText
  {
   color: white;
+  text-align: center; 
  }
  .titleText:hover
  {
