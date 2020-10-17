@@ -132,6 +132,8 @@
         border-style: solid;
         filter: brightness(0.8) contrast(1.0);
         z-index: 1;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 15px;
       }
 
      /*Button to go to the top of the page */ 
@@ -147,6 +149,7 @@
     border-radius: 25px 25px 25px 25px; 
     background: #D1603D; 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  opacity: 0.5;
   }
  
  /*Rotation of elements
@@ -236,4 +239,18 @@
  .titleText:hover
  {
   color: white;
+ }
+ .galeryPhoto
+ {
+  border-radius: 100px 10px 100px 10px;
+  width: 15%;
+  margin-right: -10%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1;
+ }
+ .galeryPhoto:hover
+ {
+  width: 16%;
+  z-index: 2;
+  margin-bottom: 5%;
  }

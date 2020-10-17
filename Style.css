@@ -227,3 +227,17 @@
  {
   color: black;
 }
+.galeryPhoto
+ {
+  border-radius: 100px 10px 100px 10px;
+  width: 15%;
+  margin-right: -10%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1;
+ }
+ .galeryPhoto:hover
+ {
+  width: 16%;
+  z-index: 2;
+  margin-bottom: 5%;
+ }
