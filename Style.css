@@ -138,9 +138,9 @@
         width: 192px;
         height: 256px;
         background-size: 100%;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
+        z-index: 1;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 15px;
       }
       
   #topButt 
@@ -214,6 +214,11 @@
   margin-top: 0px;
 }
 .btn-toggle:hover
+ {
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
+ .btn-language:hover
  {
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);

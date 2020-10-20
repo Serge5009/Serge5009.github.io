@@ -231,6 +231,11 @@
   height: 50px;
   widows: 100px;
  }
+ .btn-language:hover
+ {
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
  .titleText
  {
   color: white;

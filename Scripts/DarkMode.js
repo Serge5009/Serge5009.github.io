@@ -21,9 +21,11 @@ btn.addEventListener("click", function() {
     // ... then switch it to "dark theme"
     themelink.href = "DarkMode.css";
   // Otherwise...
+    alert("You`re now in a Dark Mode")
   } else {
     // ... switch it to "light theme"
     themelink.href = "Style.css";
+    alert("You`re now in a Normal Mode")
   }
   // Let's say the theme is equal to light
   let theme = "light";
