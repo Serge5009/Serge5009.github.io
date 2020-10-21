@@ -252,10 +252,12 @@
   margin-right: -8%;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   z-index: 1;
+  position: relative;
  }
  .galeryPhoto:hover
  {
-  width: 16%;
+  width: 13%;
   z-index: 2;
+  position: absolute;
   margin-bottom: 5%;
  }
