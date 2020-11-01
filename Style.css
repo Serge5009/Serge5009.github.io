@@ -248,3 +248,18 @@
   z-index: 1;
   position: relative;
  }
+ .ArrowsPhoto
+ {
+  border-radius: 100px 10px 100px 10px;
+  width: 25%;
+  margin-right: -10%;
+  border: 2px solid #D1603D;
+  
+  position: relative;
+ }
+ .ArrowsPhoto:hover
+ {
+  width: 30%;
+  z-index: 1;
+  position: relative;
+  }
