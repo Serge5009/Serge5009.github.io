@@ -12,6 +12,15 @@ if (currentTheme == "dark") {
   //        document.body.classList.add("dark-theme");
    themelink.href = "DarkMode.css";
 }
+else if (currentTheme == "light") {
+  // ...then use the .dark-theme class
+  //        document.body.classList.add("dark-theme");
+   themelink.href = "Style.css";
+}
+else
+{
+  themelink.href = "DarkMode.css";
+}
  
 // Listen for a click on the button 
 btn.addEventListener("click", function() {
